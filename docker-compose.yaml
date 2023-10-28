@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: .devcontainer/frontend/Dockerfile
+    container_name: nextjs_container
+    ports:
+      # Next.js
+      - "3000:3000"
+    volumes:
+      - "./app/frontend:/workspace/frontend"
+      - "nextjs_node_modules:/workspace/frontend/node_modules"
+    tty: true
+    stdin_open: true
+    platform: linux/arm64/v8
+
+volumes:
+  nextjs_node_modules:
