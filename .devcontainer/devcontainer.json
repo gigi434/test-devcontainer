@@ -4,10 +4,10 @@
 	"name": "Node.js & TypeScript",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"dockerComposeFile": [
-		"../../docker-compose.yaml"
+		"./docker-compose.yaml"
 	],
 	"service": "frontend",
-	"workspaceFolder": "/workspace/frontend"
+	"workspaceFolder": "/workspace/"
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
