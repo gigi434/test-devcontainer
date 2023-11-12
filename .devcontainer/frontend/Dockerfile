@@ -5,3 +5,6 @@ WORKDIR /workspace
 RUN chown -R node:node ./
 
 USER node
+
+# NextJS
+EXPOSE 3000
